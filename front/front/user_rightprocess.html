@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="user-style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+  maximum-scale=1.0, minimum-scale=1.0">
+		<!--부트스트랩 설치-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+		<!--nav bar-->
+		<nav class="navbar navbar-light">
+		 	<div class="container-fluid navbar-logo" id="navbar">
+				<a class="navbar-brand" href="#">
+					<img src="../assets/image/LH_logo.png" alt="" width="60%" class="d-inline-block align-text-top">
+			    </a>
+				<button class="btn btn-navbar" id="btn-login" type="submit">로그아웃</button>
+		 	</div>
+		</nav>
+
+		<!--최상단 계약 프로세스 현황 영역-->
+		<div class="top-area">
+			<div class="area-title">
+				<h3>
+					진행 중인 계약
+				</h3>
+			</div>
+			
+			<div class="process">
+				<div class="process-box">
+					<h4> 자격 심사 </h4>
+					<img src="../assets/image/icon_process_1.png" width="70%">
+					<p class="process-text"> 청년전세임대주택 신청 자격 조건을 조회하는 단계로, 최대 한달 정도 소요됩니다.</p>
+				</div>
+				<div class="process-box">
+					<h4> 매물 탐색 </h4>
+					<img src="../assets/image/icon_process_2.png" width="70%">
+					<p class="process-text"> 직접 전세 매물을 알아보는 단계로, 지역에 따라 최대 한달 정도 소요됩니다.</p>
+				</div>
+				<div class="process-box">
+					<h4 style="color: #486900"> 권리분석 요청 </h4>
+					<img src="../assets/image/icon_process_3.png" width="70%">
+					<p class="process-text"> 법무법인에 매물에 대한 권리분석을 요청하는 단계로 서류 제출이 필요합니다.</p>
+				</div>
+				<div class="process-box-active">
+					<h4> 권리분석 심사 </h4>
+					<img src="../assets/image/icon_process_4.png" width="70%">
+					<p class="process-text"> 법무법인이 서류를 검토하고 심사하는 단계로, 최대 이주일 소요됩니다. </p>
+				</div>
+				<div class="process-box">
+					<h4> 매물 계약 </h4>
+					<img src="../assets/image/icon_process_5.png" width="70%">
+					<p class="process-text"> 권리분석이 승인된 매물에 대해 LH와 계약하는 단계로, 서류 제출이 필요합니다. </p>
+				</div>
+				<div class="process-box">
+					<h4> 입주 </h4>
+					<img src="../assets/image/icon_process_6.png" width="70%">
+					<p class="process-text"> 양가 계약이 모두 성립된 상태로, 입주 리모델링을 신청할 수 있습니다. </p>
+				</div>
+			
+				<!-- <div class="progress" id="progress-bar-color">
+					<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div> -->
+				
+			</div>
+			
+		</div>
+		
+		<!--상세 계약 프로세스에 대한 안내 영역-->
+		<div class="detail">
+			<div>
+				<h3>
+					권리분석 심사 조회
+				</h3>
+			</div>
+			<div class="detail-text">
+				법무법인에서 진행 중인 권리 분석 심사 현황을 조회할 수 있으며, 현황은 아래와 같이 구분합니다.
+			</div>
+			<img src="../assets/image/image_process.png" width="100%">
+			<!--파일 업로드 박스-->
+			<div class="file-upload">
+				<h4>
+					현재 진행 상황:
+				</h4>
+				
+				<script>
+
+					function ShowState(){
+						var input = prompt('username');
+						switch (input) {
+							case "성윤":
+								document.write("Request");
+								break;
+							case "재경":
+								document.write("Pending");
+								break;
+							case "태욱":
+								document.write("Success");
+								break;
+							}
+					}
+				ShowState();
+					
+				</script>
+				
+			</div>
+		</div>
+
+		<div class="footer">
+			LH.zip all right reserved.
+		</div>
+	</body>
+		
+</html>
